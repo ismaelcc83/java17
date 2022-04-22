@@ -7,7 +7,7 @@ public class app{
 	public static void main(String[] args) throws IOException {
 		System.out.println("This is the main!");
 		//ColorChoice.execute();
-		PasswordGenerator.execute();
+		//PasswordGenerator.execute();
 		//IntegerArraySet.execute();
 		//IterativoVersusRecursivo.execute();
 	}
