@@ -13,7 +13,8 @@ public class app{
 		//IntegerArraySet.execute();
 		//IterativoVersusRecursivo.execute();
 		//new Jep398().run(); //Deprecate the Applet API for Removal
-		Jep406.execute(); //Pattern Matching for switch
+		//Jep406.execute(); //Pattern Matching for switch
+		Jep409.execute(); //Sealed Classes
 	}
 
 }
