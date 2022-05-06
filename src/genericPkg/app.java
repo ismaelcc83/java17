@@ -1,20 +1,23 @@
 package genericPkg;
 
 import java.io.IOException;
-import java.util.Scanner;
 
-public class app{
-	
+public class app {
+
 	public static void main(String[] args) throws IOException {
 		System.out.println("This is the main");
-		
-		//ColorChoice.execute();
-		//PasswordGenerator.execute();
-		//IntegerArraySet.execute();
-		//IterativoVersusRecursivo.execute();
-		//new Jep398().run(); //Deprecate the Applet API for Removal
-		//Jep406.execute(); //Pattern Matching for switch
-		Jep409.execute(); //Sealed Classes
+		System.out.println();
+
+		// Test.execute();
+		// ColorChoice.execute();
+		// PasswordGenerator.execute();
+		// IntegerArraySet.execute();
+		// IterativoVersusRecursivo.execute();
+		Jep395.execute(); // Records
+		// new Jep398().run(); //Deprecate the Applet API for Removal
+		// Jep406.execute(); //Pattern Matching for switch
+		// Jep409.execute(); //Sealed Classes
+		// Jep415.execute(); //Context-Specific Deserialization Filters
 	}
 
 }
