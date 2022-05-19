@@ -2,7 +2,7 @@ package genericPkg;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-public class PasswordGenerator {
+public class FPasswordGenerator {
 
     public static void execute(){
         String text = "ABCDEFGHIKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890";

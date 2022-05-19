@@ -3,7 +3,7 @@ package genericPkg;
 import java.io.IOException;
 
 //Implementación del mismo algoritmo de forma iterativa versus recursiva
-public class IterativoVersusRecursivo{
+public class FIterativoVersusRecursivo{
 	
 	 public static void execute() throws IOException {
 		 
