@@ -8,11 +8,6 @@ public class app {
 	System.out.println("This is the main");
 	System.out.println();
 
-//	Test.execute();
-//	FColorChoice.execute();
-//	FPasswordGenerator.execute();
-//	FIntegerArraySet.execute();
-//	FIterativoVersusRecursivo.execute();
 	Jep395.execute(); // Records
 //	new Jep398().run(); // Deprecate the Applet API for Removal
 //	Jep406.execute(); // Pattern Matching for switch
