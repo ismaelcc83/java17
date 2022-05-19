@@ -3,7 +3,7 @@ package genericPkg;
 // Records
 // =======
 // Los registros o records son clases cuyo objetivo es contener datos y transportarlos 
-// entre módulos, también conocidos como: POJOs y DTOs. Extienden de java.lang.Record.
+// entre módulos, también conocidos como: POJOs/DTOs. Extienden de java.lang.Record.
 // No se pueden extender (no heredables) y son inmutables.
 
 // El constructor, los métodos getter, toString(), equals() y hashCode() son generados 

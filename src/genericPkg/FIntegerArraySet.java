@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashSet;
 
 //Implementación de un Set donde sus elementos son Integer[]
-public class IntegerArraySet extends HashSet<Integer[]> {
+public class FIntegerArraySet extends HashSet<Integer[]> {
 		
 	private static final long serialVersionUID = 5210441881235565345L;
 
@@ -16,7 +16,7 @@ public class IntegerArraySet extends HashSet<Integer[]> {
 		i2[0] = 1; i2[1] = 1; //el elemento i2 es igual que i1
 		i3[0] = 0; i3[1] = 0;
 			 
-		IntegerArraySet ias = new IntegerArraySet();			 
+		FIntegerArraySet ias = new FIntegerArraySet();			 
 		ias.add(i1);
 		ias.add(i2); //como ya existe un elemento igual no se añade
 		ias.add(i3);
