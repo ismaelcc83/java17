@@ -6,7 +6,7 @@ import java.util.List;
 public class Jep409 {
     private SerVivo sv;
 
-    // clase anidada
+    // clase anidada (llamadas Nested Class or Inner Class)
     private sealed class SerVivo permits Monera, Protoctista, Hongo, Planta, Animal {
 
 	protected String nombre;
