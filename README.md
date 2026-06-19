@@ -1,4 +1,4 @@
-<# Java 17 Features
+# Java 17 Features
 
 ![Maven Build](https://github.com/ismaelcc83/java17/actions/workflows/maven.yml/badge.svg)
 
