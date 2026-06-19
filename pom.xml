@@ -17,11 +17,11 @@
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
         <junit.jupiter.version>5.10.2</junit.jupiter.version>
-        <maven.compiler.version>3.13.0</maven.compiler.version>
+        <maven.compiler.plugin.version>3.13.0</maven.compiler.plugin.version>
         <maven.surefire.version>3.2.5</maven.surefire.version>
         <spotless.version>2.46.1</spotless.version>
+        <google.java.format.version>1.24.0</google.java.format.version>
     </properties>
 
     <dependencies>
@@ -38,7 +38,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>${maven.compiler.version}</version>
+                <version>${maven.compiler.plugin.version}</version>
                 <configuration>
                     <release>${maven.compiler.release}</release>
                     <compilerArgs>
@@ -63,13 +63,22 @@
                 <configuration>
                     <java>
                         <googleJavaFormat>
-                            <version>1.22.0</version>
+                            <version>${google.java.format.version}</version>
                         </googleJavaFormat>
-                        <removeUnusedImports />
-                        <trimTrailingWhitespace />
-                        <endWithNewline />
+                        <removeUnusedImports/>
+                        <trimTrailingWhitespace/>
+                        <endWithNewline/>
                     </java>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>spotless-check</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
