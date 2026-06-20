@@ -23,27 +23,38 @@ Created by [Ismael Castro Capafons](https://github.com/ismaelcc83)
 ## Project structure
 
 ```text
-src
-├── main
-│   └── java
-│       └── dev
-│           └── eltiempovuela
-│               └── java17
-│                   └── jeps
-│                       ├── App.java
-│                       ├── Jep395.java
-│                       ├── Jep398.java
-│                       ├── Jep406.java
-│                       ├── Jep409.java
-│                       └── Jep415.java
-└── test
-    └── java
-        └── dev
-            └── eltiempovuela
-                └── java17
-                    └── jeps
-                        ├── Jep395Test.java
-                        └── Jep406Test.java
+java17/
+├── .github/
+│   └── workflows/
+│       └── maven.yml
+├── src/
+│   ├── main/
+│   │   └── java/
+│   │       └── dev/
+│   │           └── eltiempovuela/
+│   │               └── java17/
+│   │                   └── jeps/
+│   │                       ├── App.java
+│   │                       ├── Jep395.java
+│   │                       ├── Jep398.java
+│   │                       ├── Jep406.java
+│   │                       ├── Jep409.java
+│   │                       └── Jep415.java
+│   └── test/
+│       └── java/
+│           └── dev/
+│               └── eltiempovuela/
+│                   └── java17/
+│                       └── jeps/
+│                           ├── Jep395Test.java
+│                           ├── Jep398Test.java
+│                           ├── Jep406Test.java
+│                           ├── Jep409Test.java
+│                           └── Jep415Test.java
+├── .gitignore
+├── LICENSE
+├── pom.xml
+└── README.md
 ```
 
 ## Requirements
