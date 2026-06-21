@@ -27,6 +27,9 @@ java17/
 ├── .github/
 │   └── workflows/
 │       └── maven.yml
+├── .mvn/
+│   └── wrapper/
+│       └── maven-wrapper.properties
 ├── src/
 │   ├── main/
 │   │   └── java/
@@ -53,6 +56,8 @@ java17/
 │                           └── Jep415Test.java
 ├── .gitignore
 ├── LICENSE
+├── mvnw
+├── mvnw.cmd
 ├── pom.xml
 └── README.md
 ```
@@ -60,12 +65,36 @@ java17/
 ## Requirements
 
 - JDK 17
-- Maven 3.8 or higher
+- Maven is not required locally because this project includes the Maven Wrapper.
+
+## Maven Wrapper
+
+This project includes the Maven Wrapper, so the build can be executed without installing Maven manually.
+
+On Linux or macOS, use:
+
+```bash
+./mvnw
+```
+
+On Windows, use:
+
+```bash
+mvnw.cmd
+```
 
 ## How to compile
 
+On Linux or macOS:
+
 ```bash
-mvn clean compile
+./mvnw clean compile
+```
+
+On Windows:
+
+```bash
+mvnw.cmd clean compile
 ```
 
 ## How to run
@@ -82,49 +111,87 @@ If preview features are enabled in the code, remember to add the following VM op
 
 ## How to test
 
+On Linux or macOS:
+
 ```bash
-mvn clean test
+./mvnw clean test
+```
+
+On Windows:
+
+```bash
+mvnw.cmd clean test
 ```
 
 ## How to verify
 
-Run the full Maven verification lifecycle:
+Run the full Maven verification lifecycle.
+
+On Linux or macOS:
 
 ```bash
-mvn clean verify
+./mvnw clean verify
 ```
 
-This command compiles the project, runs the tests and executes the configured quality checks.
+On Windows:
+
+```bash
+mvnw.cmd clean verify
+```
+
+This command compiles the project, runs the tests and executes the configured quality checks, including Spotless.
 
 ## How to format
 
-If Spotless is configured in the `pom.xml`, format the code with:
+Format the code with Spotless.
+
+On Linux or macOS:
 
 ```bash
-mvn spotless:apply
+./mvnw spotless:apply
 ```
 
-To check formatting without modifying files:
+On Windows:
 
 ```bash
-mvn spotless:check
+mvnw.cmd spotless:apply
+```
+
+To check formatting without modifying files, run:
+
+On Linux or macOS:
+
+```bash
+./mvnw spotless:check
+```
+
+On Windows:
+
+```bash
+mvnw.cmd spotless:check
 ```
 
 ## Continuous Integration
 
 This project includes a GitHub Actions workflow that runs the Maven build automatically on pushes and pull requests.
 
-The workflow executes:
+The workflow executes the full Maven verification lifecycle:
 
 ```bash
 mvn clean verify
+```
+
+If desired, the workflow can also be changed to use the Maven Wrapper:
+
+```bash
+./mvnw clean verify
 ```
 
 ## Purpose
 
 The goal of this project is to explore and understand Java 17 features through small, simple and executable code examples.
 
-Java 17 is a long-term support version and represents a major step in modern Java development. The examples are intentionally simple, but the project also includes unit tests and build automation to keep the repository clean, maintainable and closer to a professional Java project structure.
+Java 17 is a long-term support version and represents a major step in modern Java development. The examples are intentionally simple, but the project also includes unit tests, code formatting and build automation to keep the repository clean, maintainable and closer to a professional Java project structure.
 
 ## Notes
 
